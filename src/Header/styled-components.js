@@ -7,6 +7,7 @@ export const StyledHeader = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     border-bottom: white 0.5px solid
 
@@ -16,7 +17,10 @@ export const StyledHeader = styled.div`
     }
 `
 
-export const StyledNavigation = styled.div``
+export const StyledNavigation = styled.div`
+    display: flex;
+    flex-wrap:nowrap;
+`
 
 export const StyledButton = styled.button`
     cursor: pointer;
@@ -35,7 +39,7 @@ export const StyledButton = styled.button`
     `}
 
     @media (max-width: 350px) {
-        margin:0rem
+        margin: 0rem
     }
 `
 

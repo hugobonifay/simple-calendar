@@ -45,7 +45,7 @@ const TopBarItem = ({
                     onClick={e => {
                         e.preventDefault()
                         const todo = prompt("Y'a quoi mec ?", "")
-                        if (todo === null) 
+                        if (todo === null || todo === "" || todo === undefined) 
                             return
                         return onAddTodo(selectedDate, todo)
                     }}
