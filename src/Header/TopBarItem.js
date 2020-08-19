@@ -55,6 +55,7 @@ const TopBarItem = ({
     };
 
     const handleClose = () => {
+        setTodo("");
         setOpen(false);
     };
 
@@ -65,7 +66,9 @@ const TopBarItem = ({
     return (
         <div>
             <StyledHeader>
-                <div>{MONTHS_DISPLAYED[currentMonthDisplay].month.substring(0,3)}{". "}{MONTHS_DISPLAYED[currentMonthDisplay].year}</div>
+                <div>
+                    {MONTHS_DISPLAYED[currentMonthDisplay].month.substring(0,3)}{". "}{MONTHS_DISPLAYED[currentMonthDisplay].year}
+                </div>
                 <StyledNavigation>
                     <StyledButton
                         disabled={currentMonthDisplay === 0}
@@ -105,12 +108,12 @@ const TopBarItem = ({
                     color: "white"
                 }}>
                     <FormControl fullWidth variant="outlined" style={{ marginTop: 40 }}>
-                        <InputLabel htmlFor="outlined-adornment-amount" style={{ color: "white" }}>Y'a quoi mec ?</InputLabel>
+                        <InputLabel htmlFor="outlined-adornment-amount" style={{ color: "white" }}>Nouvel événement</InputLabel>
                         <CssTextField
                             id="outlined-adornment-amount"
                             value={todo}
                             onChange={handleChange}
-                            labelWidth={110}
+                            labelWidth={135}
                             inputProps={{
                                 maxLength: 20,
                             }}
@@ -127,6 +130,7 @@ const TopBarItem = ({
                         onClick={e => {
                             e.preventDefault();
                             onAddTodo(selectedDate, todo);
+                            handleClose();
                             setTodo("");
                         }}
                     >

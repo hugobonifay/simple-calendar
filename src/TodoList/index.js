@@ -54,7 +54,7 @@ const TodoList = ({
           color: "white"
         }}>
           <div style={{ marginTop: 40 }}>
-            Supprimer <b>{todo}</b>, really ?
+            Êtes-vous sûr de vouloir supprimer <b>{todo}</b> ?
           </div>
         </DialogContent>
           <DialogActions style={{ background: gradient }}>
