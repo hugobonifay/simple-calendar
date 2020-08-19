@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-git clone
+git clone https://github.com/hugobonifay/simple-calendar.git
 cd simple-calendar
 npm run devmode
 ```
