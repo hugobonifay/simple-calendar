@@ -84,17 +84,3 @@ export default function(state = initialState, action) {
         default: return state;
     }
 }
-
-// localStorage.setItem("2020-01-02", 
-// JSON.stringify([
-//     "Can you pick up some ice cream...",
-//     "Your library books are overdue",
-//     "Want to grab coffee after work...",
-//     "Théo Want to buy a milkshake...",
-//     "The fish is in the rooftop...",
-//     "The fish is in the rooftop...",
-//     "The fish is in the rooftop...",
-//     "The fish is in the rooftop...",
-//     "The fish is in the rooftop...",
-//   ])
-// )

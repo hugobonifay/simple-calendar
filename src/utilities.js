@@ -23,3 +23,4 @@ for (let i = 0; i < numberOfMonthsDisplayed; i++) {
     )
 }
 
+export const gradient = "linear-gradient(90deg, rgba(194,186,186,1) 0%, rgba(40,40,40,1) 0%, rgba(88,88,88,1) 100%)";

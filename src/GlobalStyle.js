@@ -9,11 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(37, 36, 36);
+  background: linear-gradient(90deg, rgba(194,186,186,1) 0%, rgba(40,40,40,1) 0%, rgba(88,88,88,1) 100%);
   color: white;
 }
 
-* { box-sizing: border-box }
+* { 
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
 
 ::-webkit-scrollbar { width: 0 !important }
 
