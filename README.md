@@ -1,4 +1,4 @@
-# Simple Calendar
+# Simple Calendar 2.0.0
 
 ## Installation
 ```
