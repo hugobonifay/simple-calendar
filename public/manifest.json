@@ -1,6 +1,6 @@
 {
-  "short_name": "Simple Calendar",
-  "name": "Simple Calendar",
+  "short_name": "Calendar",
+  "name": "Calendar",
   "icons": [
     {
       "src": "favicon.ico",

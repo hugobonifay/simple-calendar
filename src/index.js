@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-
 import * as serviceWorker from './serviceWorker';
 import store from "./redux/store";
 import { Provider } from 'react-redux';
-
-document.title = "Simple Calendar"
 
 ReactDOM.render(
     <Provider store={store}>
